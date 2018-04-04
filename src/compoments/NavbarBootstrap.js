@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -31,37 +32,49 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/home">French Made 🔥</NavbarBrand>
+          <NavbarBrand href="/home">🌜 French Made 🌛</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/event">Event</NavLink>
+                <Link to="/event" className="nav-link">
+                  event
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/party">party</NavLink>
+                <Link to="/party" className="nav-link">
+                  party
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/catering">catering</NavLink>
+                <Link to="/catering" className="nav-link">
+                  catering
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/dinner">dinner</NavLink>
+                <Link to="/dinner" className="nav-link">
+                  dinner
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/about">about</NavLink>
+                <Link to="/about" className="nav-link">
+                  about
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <Link to="/contact" className="nav-link">
+                  contact
+                </Link>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  Apps
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
+                  <DropdownItem>Log In</DropdownItem>
+                  <DropdownItem>Sign Up</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
+                  <DropdownItem>Try Our App</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

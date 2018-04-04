@@ -13,3 +13,63 @@ body {
   color: #999;
   transition: ease-in-out color .15s;
 }
+.navbar {
+  background-color: #58aef1f7;
+  font-size: 1.1rem;
+}
+.navbar-light .navbar-nav .nav-link  {
+  color: hsl(208, 100%, 94%);
+}
+
+                                                                          
+/*footer*/
+footer .madein, footer .madein .madein__heart, footer .madein .madein__text {
+  padding-bottom: 0;
+}
+footer .madein {
+  font-family: roboto;
+  font-variant: small-caps;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #979797;
+}
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+footer .madein .heart__svg {
+  fill: #c53b3b;
+  transition: all 1s ease-in-out;
+  margin-top: 1px;
+}
+footer .row>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}

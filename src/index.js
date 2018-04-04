@@ -1,8 +1,7 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 // CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
@@ -16,6 +15,7 @@ import Party from './compoments/Party';
 import Catering from './compoments/Catering';
 import Dinner from './compoments/Dinner';
 import About from './compoments/About';
+import Footer from './compoments/Footer';
 // navbar
 import Navbar from './compoments/Navbar';
 import NavbarBootstrap from './compoments/NavbarBootstrap';
@@ -23,7 +23,7 @@ import registerServiceWorker from './compoments/registerServiceWorker';
 
 const Root = () => (
   <Router>
-    <div>
+    <div className="">
       {/*  <Navbar /> */}
       <Navbar />
       <NavbarBootstrap />
@@ -38,6 +38,7 @@ const Root = () => (
         <Route path="/store/:storeId" component={App} /> {/* means anything :storeId */}
         <Route component={NotFound} />
       </Switch>
+      <Footer />
     </div>
   </Router>
 );
