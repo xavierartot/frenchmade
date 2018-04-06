@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "google-map-react": "^0.34.0",
+    "google-maps-react": "^1.1.11",
+    "nodemailer": "^4.6.4",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-router": "^4.2.0",
@@ -16,5 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "firebase": "^4.12.1"
   }
 }

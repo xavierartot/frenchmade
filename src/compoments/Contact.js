@@ -1,17 +1,20 @@
 import React from 'react';
+import ContactForm from './ContactForm';
+import MapContact from './MapContact';
 
 const Contact = () => (
-  <form method="POST">
-    <label htmlFor="name">Name</label>
-    <input type="text" name="name" />
-
-    <label htmlFor="email">Email</label>
-    <input type="email" name="email" />
-
-    <label htmlFor="message">Message</label>
-    <textarea name="message" rows="3" />
-
-    <input type="submit" />
-  </form>
+  <div className="contact__bx">
+    <div className="row justify-content-center">
+      <h1 className="font-weight-light m-3">Contact</h1>
+    </div>
+    <div className="contact row mr-2 ml-2">
+      <div className="col-6">
+        <ContactForm />
+      </div>
+      <div className="col-6">
+        <MapContact />
+      </div>
+    </div>
+  </div>
 );
 export default Contact;
